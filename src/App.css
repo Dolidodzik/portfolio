@@ -8,14 +8,20 @@
   width: 100vw !important;
 }
 
-body{
-  width: 100vw !important;
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-wrap: break-word;
+}
+
+.nothing{
+  height: 100%;
 }
 
 .top-nav{
   text-align: center;
-  width: 100%;
-  /*background-image: url("prism.png");*/
   background-color: #1b1b1b;
   color: #ddd;
   font-size: 20px;
@@ -146,9 +152,4 @@ body{
   .third-option:hover:after {
     width: 75% !important;
   }
-}
-
-body{
-  overflow-y: scroll !important;
-  overflow-x: hidden !important;
 }

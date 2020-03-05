@@ -14,14 +14,6 @@ export default class about extends Component {
 
   render() {
 
-    function ReadMore(props){
-      return(
-        <div className="feature-read-more">
-          <a href={props.url}> Read more  </a>
-        </div>
-      );
-    }
-
     function Feature(props){
       return(
         <div className="Feature">
@@ -32,8 +24,13 @@ export default class about extends Component {
 
     return (
       <div className="component-about">
+        <Feature img_src={"fakeicon.png"} />
+        <Feature img_src={"fakeicon.png"} />
+        <Feature img_src={"fakeicon.png"} />
+        <Feature img_src={"fakeicon.png"} />
+        <Feature img_src={"fakeicon.png"} />
       </div>
     );
-    
+
   }
 }

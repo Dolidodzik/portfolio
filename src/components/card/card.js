@@ -30,7 +30,6 @@ export default class Card extends Component {
     }
     render() {
       return (
-
         <a className="card-wrap col-lg-3 col-md-4 col-sm-6"
           onMouseEnter={e => this.setState({ flipped: !this.state.flipped })}
           onMouseLeave={e => this.setState({ flipped: !this.state.flipped })}
@@ -53,7 +52,6 @@ export default class Card extends Component {
                 </div>
               </div>
           </Flipcard>
-
         </a>
       );
     }

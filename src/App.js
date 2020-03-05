@@ -72,35 +72,22 @@ class App extends Component {
 
           <Welcome/>
 
-
-          {/* About */}
           <div className="about-margin scroll_to_welcome"></div>
+          
           <ScrollableAnchor id={'about'}>
             <div className="spacer-about"></div>
           </ScrollableAnchor>
           <About/>
 
-          {/* Projects */}
           <ScrollableAnchor id={'projects'}>
             <div className="spacer-projects"></div>
           </ScrollableAnchor>
           <Projects/>
 
-          {/* Contact */}
           <ScrollableAnchor id={'contact'}>
             <div className="contact-nothing"></div>
           </ScrollableAnchor>
           <Contact/>
-
-
-          {/*<BrowserRouter>
-            <Switch>
-              <Route exact path="/projects" component={projects}/>
-              <Route exact path="/" component={welcome}/>
-              <Route exact path="/about" component={about}/>
-              <Route exact path="/contact" component={contact}/>
-            </Switch>
-          </BrowserRouter>*/}
 
         </div>
       );
