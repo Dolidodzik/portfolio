@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700&display=swap');
+
+.App {
+  text-align: center;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #eee !important;
+  width: 100vw !important;
+}
+
+body{
+  width: 100vw !important;
+}
+
+.top-nav{
+  text-align: center;
+  width: 100%;
+  /*background-image: url("prism.png");*/
+  background-color: #1b1b1b;
+  color: #ddd;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 17px;
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 3px 8px rgba(142, 142, 142, 0.35);
+}
+
+.test{
+  width: 375px !important;
+  height: 10px;
+  background-color: white;
+}
+
+/* Styling topbar */
+.top-nav-wrap > span{
+  padding: 0 45px;
+  border-left: 3px #fff solid;
+  display: inline-block;
+  text-decoration: none !important;
+}
+
+.top-nav-wrap {
+  text-align: center;
+  -webkit-transition: font-size 0.4s;
+  -moz-transition: font-size 0.4s;
+  -o-transition: font-size 0.4s;
+  transition: font-size 0.4s;
+}
+
+.option {
+  position: relative;
+  padding-bottom: 3px;
+  line-height: initial;  /* added */
+  cursor: pointer;
+}
+.option:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.option:hover:after {
+  width: 100%;
+  background: #ddd;
+}
+
+.first-option{
+  border: none !important;
+}
+
+.first-2-options{
+  border-left: none !important;
+}
+
+.about-margin{
+  margin-bottom: 150px;
+}
+
+.spacer-about{
+  padding-top: 100px;
+}
+
+.spacer-projects{
+  padding-top: 70px;
+}
+
+.contact-nothing{
+  margin-top: 350px;
+  padding-top: 100px;
+}
+
+/* * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* Hidding bottom scrollbar, and making right scrollbar to always appear */
+
+@media only screen and (max-width: 768px){
+  .top-nav-wrap > span{
+    border-left: none;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    font-size: 17px;
+    padding: 1px;
+  }
+  .fourth-option:hover:after {
+    width: 70% !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Styling borders */
+  .first-option:hover:after {
+    width: 60% !important;
+  }
+  .second-option:hover:after {
+    width: 85% !important;
+  }
+  .third-option:hover:after {
+    width: 80% !important;
+  }
+  .fourth-option:hover:after {
+    width: 70% !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 850px) {
+  .top-nav-wrap > span{
+    font-size: 18px;
+  }
+  /* Styling borders */
+  .first-option:hover:after {
+    width: 35% !important;
+  }
+  .second-option:hover:after {
+    width: 95% !important;
+  }
+  .third-option:hover:after {
+    width: 75% !important;
+  }
+}
+
+body{
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+}

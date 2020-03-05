@@ -1,0 +1,36 @@
+/* Div that wraps this component */
+.component-welcome{
+  color: #ccc;
+  margin: 0;
+}
+
+/* Incrasing weight of header */
+.welcome-h1{
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.more-about{
+  cursor: pointer;
+  margin-top: 15vh;
+}
+
+/* Handling "bouncing" arrow animation */
+.bounce{
+  animation: bounce 1.85s infinite;
+  margin-top: 5.5rem;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  65% {
+    transform: translateY(-15px);
+  }
+}
+.bounce-arrow{
+  width: 3rem;
+}
