@@ -49,7 +49,12 @@ export default class contact extends Component {
               </form>
 
               <h3 className="font-weight-600 col-md-12 email-header"> Or send an email: <span className="email"> dominiclech787@gmail.com </span> </h3>
-              <a href="https://github.com/Dolidodzik" target="_blank" className="font-weight-600 col-md-12 email-header github-header"> Github account: <span className="email"> Dolidodzik </span> </a>
+              <a
+                href="https://github.com/Dolidodzik"
+                target="_blank" rel="noopener noreferrer"
+                className="font-weight-600 col-md-12 email-header github-header">
+                Github account: <span className="email"> Dolidodzik </span>
+              </a>
 
             </main>
 

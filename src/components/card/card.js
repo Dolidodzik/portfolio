@@ -35,11 +35,12 @@ export default class Card extends Component {
           onMouseLeave={e => this.setState({ flipped: !this.state.flipped })}
           href = {this.state.Link}
           target = "_blank"
+          rel="noopener noreferrer"
         >
 
           <Flipcard flipped={this.state.flipped}>
               <div className="content front square-box" >
-                <img src={this.props.FrontImageSource} />
+                <img src={this.props.FrontImageSource} alt={this.props.Title} />
               </div>
 
               <div className="content back square-box">
