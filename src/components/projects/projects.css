@@ -5,3 +5,37 @@ h4{
 .component-projects{
   padding-top: 110px;
 }
+.cards-containter {
+	 display: flex;
+	 flex-wrap: wrap;
+}
+
+/* Centering squares */
+@media only screen and (max-width: 575px) {
+  .container{
+    width: 300px;
+  }
+  .cards-containter{
+    padding-left: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .cards-containter{
+    padding-left: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .cards-containter{
+    padding-left: 100px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .cards-containter{
+    padding-left: 80px;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .cards-containter{
+    padding-left: 40px;
+  }
+}

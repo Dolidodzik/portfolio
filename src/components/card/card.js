@@ -30,7 +30,7 @@ export default class Card extends Component {
     }
     render() {
       return (
-        <a className="card-wrap col-lg-3 col-md-4 col-sm-6"
+        <a className="card-wrap"
           onMouseEnter={e => this.setState({ flipped: !this.state.flipped })}
           onMouseLeave={e => this.setState({ flipped: !this.state.flipped })}
           href = {this.state.Link}

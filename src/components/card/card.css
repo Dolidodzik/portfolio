@@ -21,8 +21,8 @@
   border-radius: 25px;
   overflow: hidden;
   cursor: pointer;
-  width: 225px;
-  height: 225px;
+  width: 235px;
+  height: 235px;
 }
 
 .BackHeader{
@@ -42,22 +42,8 @@
   font-weight: 600;
 }
 
-.card-spacer{
-  padding-top: 270px;
-}
-
 .card-wrap{
-  width: 225px;
-  height: 225px;
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px)  {
-  .content {
-    width: 255px;
-    height: 255px;
-  }
-  .card-wrap{
-    width: 255px;
-    height: 255px;
-  }
+  width: 235px;
+  height: 235px;
+  margin: 15px;
 }

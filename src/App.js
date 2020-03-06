@@ -73,7 +73,6 @@ class App extends Component {
           <Welcome/>
 
           <div className="about-margin scroll_to_welcome"></div>
-          
           <ScrollableAnchor id={'about'}>
             <div className="spacer-about"></div>
           </ScrollableAnchor>
