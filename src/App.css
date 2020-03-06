@@ -75,76 +75,19 @@ html,body{
   border: none !important;
 }
 
-.first-2-options{
-  border-left: none !important;
+.projects-about-spacer{
+  margin-top: 30vh;
 }
-
-.about-margin{
+.scroll_to_welcome{
   margin-bottom: 150px;
 }
-
 .spacer-about{
-  padding-top: 100px;
+  padding-top: 150px;
 }
-
 .spacer-projects{
-  padding-top: 70px;
+  padding-top: 170px;
 }
-
-.contact-nothing{
-  margin-top: 350px;
-  padding-top: 100px;
-}
-
-/* * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-/* Hidding bottom scrollbar, and making right scrollbar to always appear */
-
-@media only screen and (max-width: 768px){
-  .top-nav-wrap > span{
-    border-left: none;
-    display: inline-block;
-    vertical-align: middle;
-    width: 25%;
-    font-size: 17px;
-    padding: 1px;
-  }
-  .fourth-option:hover:after {
-    width: 70% !important;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  /* Styling borders */
-  .first-option:hover:after {
-    width: 60% !important;
-  }
-  .second-option:hover:after {
-    width: 85% !important;
-  }
-  .third-option:hover:after {
-    width: 80% !important;
-  }
-  .fourth-option:hover:after {
-    width: 70% !important;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 850px) {
-  .top-nav-wrap > span{
-    font-size: 18px;
-  }
-  /* Styling borders */
-  .first-option:hover:after {
-    width: 35% !important;
-  }
-  .second-option:hover:after {
-    width: 95% !important;
-  }
-  .third-option:hover:after {
-    width: 75% !important;
-  }
+.spacer-contact{
+  margin-top: 200px;
+  padding-top: 50px;
 }

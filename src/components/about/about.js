@@ -13,7 +13,7 @@ export default class about extends Component {
 
     function Technology(props){
       return(
-        <div className="feature col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+        <div className="technology col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
           <img src={props.img_src} className="img-fluid" alt="" />
         </div>
       );

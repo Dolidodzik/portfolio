@@ -48,19 +48,19 @@ class App extends Component {
                   home
                 </span>
 
-                <span href="/about" className="second-option option"
+                <span href="/about" className="option"
                   onClick={() => goToAnchor('about') }
                 >
                   about my work
                 </span>
 
-                <span href="/projects" className="third-option option"
+                <span href="/projects" className="option"
                   onClick={() => goToAnchor('projects') }
                 >
                   my projects
                 </span>
 
-                <span href="/contact" className="fourth-option option"
+                <span href="/contact" className="option"
                   onClick={() => goToAnchor('contact') }
                 >
                   contact me
@@ -71,12 +71,13 @@ class App extends Component {
 
 
           <Welcome/>
-
-          <div className="about-margin scroll_to_welcome"></div>
+          <div className="scroll_to_welcome"></div>
           <ScrollableAnchor id={'about'}>
             <div className="spacer-about"></div>
           </ScrollableAnchor>
           <About/>
+
+          <div className="projects-about-spacer"></div>
 
           <ScrollableAnchor id={'projects'}>
             <div className="spacer-projects"></div>
@@ -84,7 +85,7 @@ class App extends Component {
           <Projects/>
 
           <ScrollableAnchor id={'contact'}>
-            <div className="contact-nothing"></div>
+            <div className="spacer-contact"></div>
           </ScrollableAnchor>
           <Contact/>
 
