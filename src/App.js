@@ -64,6 +64,8 @@ class App extends Component {
             </Menu>
             <main id="page-wrap">
               <div>
+
+
                 <Welcome/>
                 <div className="scroll_to_welcome"></div>
                 <ScrollableAnchor id={'about'}>
@@ -82,12 +84,11 @@ class App extends Component {
                   <div className="spacer-contact"></div>
                 </ScrollableAnchor>
                 <Contact/>
+
+
               </div>
             </main>
           </div>
-
-
-
         </div>
       );
     }

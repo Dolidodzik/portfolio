@@ -42,17 +42,16 @@ html,body{
   margin-top: 30vh;
 }
 .scroll_to_welcome{
-  margin-bottom: 15rem;
+  margin-top: 16rem;
 }
 .spacer-about{
-  padding-top: 15rem;
+  padding-top: 25vh;
 }
 .spacer-projects{
-  padding-top: 17rem;
+  padding-top: 8vh;
 }
 .spacer-contact{
-  margin-top: 15rem;
-  padding-top: 5rem;
+  padding-top: 3vh;
 }
 
 
