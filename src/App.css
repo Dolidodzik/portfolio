@@ -6,55 +6,15 @@
   font-family: 'Open Sans', sans-serif;
   color: #eee !important;
 }
-
 html,body{
     overflow-wrap: break-word;
 }
 
-.nothing{
-  height: 100%;
-}
-
-.top-nav{
-  text-align: center;
-  background-color: #1b1b1b;
-  color: #ddd;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 17px;
-  position: sticky !important;
-  position: -webkit-sticky !important;
-  top: 0;
-  z-index: 2;
-  box-shadow: 0 3px 8px rgba(142, 142, 142, 0.35);
-}
-
-.test{
-  width: 375px !important;
-  height: 10px;
-  background-color: white;
-}
-
-/* Styling topbar */
-.top-nav-wrap > span{
-  padding: 0 45px;
-  border-left: 3px #fff solid;
-  display: inline-block;
-  text-decoration: none !important;
-}
-
-.top-nav-wrap {
-  text-align: center;
-  -webkit-transition: font-size 0.4s;
-  -moz-transition: font-size 0.4s;
-  -o-transition: font-size 0.4s;
-  transition: font-size 0.4s;
-}
-
+/* Animating option on hover */
 .option {
   position: relative;
   padding-bottom: 3px;
-  line-height: initial;  /* added */
+  line-height: initial;
   cursor: pointer;
 }
 .option:after {
@@ -67,27 +27,66 @@ html,body{
   transition: width .5s ease, background-color .5s ease;
 }
 .option:hover:after {
-  width: 100%;
+  width: 70%;
   background: #ddd;
 }
+.first-option:hover:after {
+  width: 57%;
+}
 
+/* Margins between components */
 .first-option{
   border: none !important;
 }
-
 .projects-about-spacer{
   margin-top: 30vh;
 }
 .scroll_to_welcome{
-  margin-bottom: 150px;
+  margin-bottom: 15rem;
 }
 .spacer-about{
-  padding-top: 150px;
+  padding-top: 15rem;
 }
 .spacer-projects{
-  padding-top: 170px;
+  padding-top: 17rem;
 }
 .spacer-contact{
-  margin-top: 200px;
-  padding-top: 50px;
+  margin-top: 15rem;
+  padding-top: 5rem;
+}
+
+
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+  color: #eee;
+}
+.bm-burger-button {
+  position: fixed;
+  width: 3rem;
+  height: 2.2rem;
+  left: 2rem;
+  top: 2rem;
+  color: white;
+}
+.bm-burger-bars {
+  background: #ddd;
+  border: solid 1px #7c7c7c;
+}
+.bm-cross-button {
+  height: 50px !important;
+  width: 50px !important;
+}
+.bm-cross {
+  background: #bdc3c7;
+  height: 35px !important;
+  width: 4px !important;
+}
+.bm-menu {
+  background: #101010;
+  border-right: #101010 15px solid;
+  padding: 3em 1.5em 0;
+  font-size: 1.6em;
 }
