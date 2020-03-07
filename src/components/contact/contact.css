@@ -7,7 +7,7 @@
 }
 .font-weight-600{
     font-weight: 600;
-    color: inherit;
+    color: inherit !important;
 }
 .form-header{
   margin-top: 70px;

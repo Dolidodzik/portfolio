@@ -25,18 +25,18 @@ export default class about extends Component {
 
           <h1 className="col-12 about-header"> Technologies that I am familiar with: </h1>
 
-          <Technology img_src={"fakeicon.png"} />
-          <Technology img_src={"fakeicon.png"} />
-          <Technology img_src={"fakeicon.png"} />
-          <Technology img_src={"fakeicon.png"} />
-          <Technology img_src={"fakeicon.png"} />
-          <Technology img_src={"fakeicon.png"} />
-          <Technology img_src={"fakeicon.png"} />
-          <Technology img_src={"fakeicon.png"} />
-          <Technology img_src={"fakeicon.png"} />
-          <Technology img_src={"fakeicon.png"} />
-          <Technology img_src={"fakeicon.png"} />
-          <Technology img_src={"fakeicon.png"} />
+          <Technology img_src={"technologies/html+css.png"} />
+          <Technology img_src={"technologies/es6.png"} />
+          <Technology img_src={"technologies/sass.png"} />
+          <Technology img_src={"technologies/bootstrap.png"} />
+          <Technology img_src={"technologies/react.png"} />
+          <Technology img_src={"technologies/vue.png"} />
+          <Technology img_src={"technologies/angular.png"} />
+          <Technology img_src={"technologies/django.png"} />
+          <Technology img_src={"technologies/drf.png"} />
+          <Technology img_src={"technologies/wagtail.png"} />
+          <Technology img_src={"technologies/linux.png"} />
+          <Technology img_src={"technologies/git.png"} />
         </div>
       </div>
     );
