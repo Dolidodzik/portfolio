@@ -3,13 +3,14 @@ import './card.css'
 
 import Flipcard from '@kennethormandy/react-flipcard'
 import '@kennethormandy/react-flipcard/dist/Flipcard.css'
-
+import { isBrowser } from "react-device-detect";
 
 export default class Card extends Component {
     constructor(props) {
      super(props);
      this.state = {
         flipped: false,
+        link: "https://google.com"
       }
       /* Simulating flip, to avoid animation bug */
       setTimeout(
@@ -28,14 +29,33 @@ export default class Card extends Component {
       );
 
     }
+
+    handleClicks = () => {
+      console.log(this.clickedAtLeastOnce)
+      if (this.clickTimeout !== null && this.clickedAtLeastOnce) {
+        this.clickTimeout = null
+        // Redirecting after double click
+        window.open(this.state.link)
+
+      } else {
+        if(isBrowser){
+          window.open(this.state.link, "_blank")
+        }
+        this.clickedAtLeastOnce = true;
+        this.clickTimeout = setTimeout(()=>{
+        // Redirecting after first click (only for non-touchable screens)
+        clearTimeout(this.clickTimeout)
+          this.clickTimeout = null
+        }, 700)
+      }
+    }
+
     render() {
       return (
-        <a className="card-wrap"
+        <span className="card-wrap ButtonLink"
           onMouseEnter={e => this.setState({ flipped: !this.state.flipped })}
           onMouseLeave={e => this.setState({ flipped: !this.state.flipped })}
-          href = {this.state.Link}
-          target = "_blank"
-          rel="noopener noreferrer"
+          onClick={e => this.handleClicks()}
         >
 
           <Flipcard flipped={this.state.flipped}>
@@ -53,7 +73,7 @@ export default class Card extends Component {
                 </div>
               </div>
           </Flipcard>
-        </a>
+        </span>
       );
     }
   }
