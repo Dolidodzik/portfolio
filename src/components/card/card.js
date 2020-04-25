@@ -9,8 +9,7 @@ export default class Card extends Component {
     constructor(props) {
      super(props);
      this.state = {
-        flipped: false,
-        link: "https://google.com"
+        flipped: false
       }
       /* Simulating flip, to avoid animation bug */
       setTimeout(
@@ -35,16 +34,16 @@ export default class Card extends Component {
       if (this.clickTimeout !== null && this.clickedAtLeastOnce) {
         this.clickTimeout = null
         // Redirecting after double click
-        window.open(this.state.link)
+        window.open(this.props.Link)
 
       } else {
         if(isBrowser){
-          window.open(this.state.link, "_blank")
+          window.open(this.props.Link, "_blank")
         }
         this.clickedAtLeastOnce = true;
         this.clickTimeout = setTimeout(()=>{
         // Redirecting after first click (only for non-touchable screens)
-        clearTimeout(this.clickTimeout)
+        clearTimeout(this.props.Link)
           this.clickTimeout = null
         }, 700)
       }

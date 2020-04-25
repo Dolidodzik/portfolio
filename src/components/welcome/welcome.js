@@ -11,7 +11,7 @@ export default class welcome extends Component {
         <div className="component-welcome row">
           <div className="col-md-1"></div>
             <header className="welcome-header col-md-10">
-              <h1 className="welcome-h1"> Hello, my name is Dominik Lech and I am full stack developer! </h1>
+              <h1 className="welcome-h1"> Hello, my name is Dominik Lech, I am full stack developer! </h1>
             </header>
             <div className="col-md-1"></div>
 

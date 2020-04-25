@@ -1,5 +1,6 @@
 .front{
   border-radius: 25px;
+  border: 1px solid #fff
 }
 .front img{
   width: 100%;
@@ -14,7 +15,7 @@
   position: relative;
 }
 .content {
-  background-color: #414141;
+  background-color: #fff;
   color: #D4D4D4;
   border-radius: 25px;
   overflow: hidden;
@@ -22,10 +23,14 @@
   width: 235px;
   height: 235px;
 }
+.back{
+  background-color: #414141;
+}
 .BackHeader{
   height: 20px;
   margin-top: 25px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 600;
   text-decoration: underline;
 }
 .BackText{

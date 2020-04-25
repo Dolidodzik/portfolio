@@ -39,17 +39,17 @@ export default class projects extends Component {
             </div>
 
             <main className="cards-containter row">
-              <Card Title={"Never-Forget"} FrontImageSource={"fakeicon.png"} BackText="Application that allows you to organize research!" Link = "https://github.com/Dolidodzik/foodie" />
+              <Card Title={"Foodie"} FrontImageSource={"/projectImages/foodie.png"} BackText="Hungry? Here you can search for nearby restaurants!" Link = "https://github.com/Dolidodzik/foodie" />
               <div className="card-spacer"></div>
-              <Card Title={"Typing"} FrontImageSource={"fakeicon.png"} BackText="In this app you can check your typing speed!" Link = "https://github.com/Dolidodzik/typingspeedtest" />
+              <Card Title={"Bulbapedia"} FrontImageSource={"/projectImages/bulbapedia.png"} BackText="Backend, for wikipedia like page that I created as freelancer for one of redditors!" Link = "https://github.com/Dolidodzik/bulbapedia" />
               <div className="card-spacer"></div>
-              <Card Title={"Portfolio"} FrontImageSource={"fakeicon.png"} BackText="My portfolio that you are looking on right now!" Link = "https://github.com/Dolidodzik/portfolio" />
+              <Card Title={"Typing"} FrontImageSource={"/projectImages/typingspeedtest.png"} BackText="In this app you can check your typing speed!" Link = "https://github.com/Dolidodzik/typingspeedtest" />
               <div className="card-spacer"></div>
-              <Card Title={"Foodie"} FrontImageSource={"fakeicon.png"} BackText="Hungry? Here you can find nearby restaurants!" Link = "https://github.com/Dolidodzik/foodie" />
+              <Card Title={"Portfolio"} FrontImageSource={"/projectImages/portfolio.png"} BackText="My portfolio that you are looking on right now!" Link = "https://github.com/Dolidodzik/portfolio" />
               <div className="card-spacer"></div>
-              <Card Title={"Gallery"} FrontImageSource={"fakeicon.png"} BackText="Simple, but functional image gallery!" Link = "https://github.com/Dolidodzik/django_wagtail_image_gallery" />
+              <Card Title={"Gallery"} FrontImageSource={"/projectImages/gallery.png"} BackText="Simple image gallery!" Link = "https://github.com/Dolidodzik/django_wagtail_image_gallery" />
               <div className="card-spacer"></div>
-              <Card Title={"Blog"} FrontImageSource={"fakeicon.png"} BackText="Wagtail blog, with customizable post, pages, and other utilities!" Link = "https://github.com/Dolidodzik/Wagtail-Django-Static-Blog" />
+              <Card Title={"Blog"} FrontImageSource={"/projectImages/blog.png"} BackText="Wagtail blog, with customizable post, pages, and other utilities!" Link = "https://github.com/Dolidodzik/Wagtail-Django-Static-Blog" />
             </main>
 
           </div>
